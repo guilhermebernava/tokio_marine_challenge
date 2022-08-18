@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:tokio_marine/themes/app_images.dart';
 import 'package:tokio_marine/themes/app_text_style.dart';
@@ -9,8 +10,11 @@ class LogoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment:
-          isAppBar ? MainAxisAlignment.spaceEvenly : MainAxisAlignment.start,
+      mainAxisAlignment: kIsWeb
+          ? MainAxisAlignment.center
+          : isAppBar
+              ? MainAxisAlignment.spaceEvenly
+              : MainAxisAlignment.start,
       children: [
         Image.asset(
           fit: BoxFit.cover,

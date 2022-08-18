@@ -1,5 +1,7 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import '../../../themes/app_colors.dart';
+import 'package:tokio_marine/data/data.dart';
+import 'package:tokio_marine/screens/home/widgets/home_carousel_item.dart';
 import '../../../themes/app_text_style.dart';
 
 class HomeCarousel extends StatelessWidget {
@@ -8,6 +10,8 @@ class HomeCarousel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final list = Data().carouselItens;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -22,19 +26,16 @@ class HomeCarousel extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: size.height * 0.15,
+          height: kIsWeb ? size.height * 0.1 : size.height * 0.15,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.symmetric(horizontal: 15),
-            itemBuilder: (context, index) => Container(
-              margin: const EdgeInsets.symmetric(horizontal: 8),
-              decoration: BoxDecoration(
-                color: AppColors.lightBlack,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              width: size.width * 0.4,
+            itemBuilder: (context, index) => HomeCarouselItem(
+              size: size,
+              icon: list[index].icon,
+              text: list[index].text,
             ),
-            itemCount: 10,
+            itemCount: list.length,
           ),
         )
       ],

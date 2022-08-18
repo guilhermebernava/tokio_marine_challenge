@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tokio_marine/screens/home/widgets/home_card.dart';
+import 'package:tokio_marine/screens/home/widgets/home_cards.dart';
 import 'package:tokio_marine/screens/home/widgets/home_carousel.dart';
 import 'package:tokio_marine/screens/home/widgets/home_drawer.dart';
 import 'package:tokio_marine/screens/home/widgets/user_card.dart';
-
 import '../widgets/home_app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -24,9 +23,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             UserCard(size: size, name: 'Guilherme'),
             HomeCarousel(size: size),
-            HomeCard(size: size),
-            HomeCard(size: size),
-            HomeCard(size: size),
+            HomeCards(size: size),
           ],
         ),
       ),

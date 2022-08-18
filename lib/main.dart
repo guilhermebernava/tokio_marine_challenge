@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'app.dart';
+import 'package:tokio_marine/app_firebase.dart';
 
-void main() {
+void main() async {
   runApp(
-    const App(),
+    const AppFirebase(),
   );
 }

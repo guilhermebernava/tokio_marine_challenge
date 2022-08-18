@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "828767293611",
+    "project_id": "tokio-marine-80d9d",
+    "storage_bucket": "tokio-marine-80d9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828767293611:android:2434ff87d2eabfaffa67ee",
+        "android_client_info": {
+          "package_name": "com.example.tokio_marine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828767293611-ncobnvsqgna524g0l0ab9n6e35076jkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCV_nlOkoHL69GE3T8Zejlq87lBG-BeL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828767293611-ncobnvsqgna524g0l0ab9n6e35076jkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

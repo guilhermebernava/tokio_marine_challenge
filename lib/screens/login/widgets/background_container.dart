@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:tokio_marine/themes/app_colors.dart';
 import '../../../themes/app_text_style.dart';
@@ -26,6 +27,8 @@ class BackgroundContainer extends StatelessWidget {
               horizontal: size.width * 0.075,
             ),
             child: Column(
+              crossAxisAlignment:
+                  kIsWeb ? CrossAxisAlignment.center : CrossAxisAlignment.start,
               children: [
                 const LogoWidget(),
                 const SizedBox(
@@ -35,7 +38,7 @@ class BackgroundContainer extends StatelessWidget {
                   width: size.width,
                   child: Text(
                     'Bem-vindo!',
-                    textAlign: TextAlign.start,
+                    textAlign: kIsWeb ? TextAlign.center : TextAlign.start,
                     style: AppTextStyle.appRoboto(
                         fontSize: 25, fontWeight: FontWeight.bold),
                   ),

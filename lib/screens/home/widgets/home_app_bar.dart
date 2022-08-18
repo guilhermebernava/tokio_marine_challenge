@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../../../themes/app_images.dart';
 
@@ -20,12 +21,17 @@ class HomeAppBar extends AppBar {
             height: size.height * 0.05,
           ),
           actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.notifications_none_rounded,
-                color: Colors.white,
-                size: 30,
+            Padding(
+              padding: const EdgeInsets.only(
+                right: kIsWeb ? 10 : 0,
+              ),
+              child: IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.notifications_none_rounded,
+                  color: Colors.white,
+                  size: 30,
+                ),
               ),
             )
           ],

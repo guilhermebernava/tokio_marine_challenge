@@ -1,14 +1,15 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:tokio_marine/screens/login/widgets/login_form.dart';
 import 'package:tokio_marine/themes/app_colors.dart';
 import 'package:tokio_marine/widgets/login_text_button.dart';
-import '../../../providers/user_provider.dart';
+import '../../../providers/auth.dart';
 import '../../../widgets/circle_button.dart';
 
 class LoginContainer extends StatefulWidget {
   final VoidCallback onTap;
   final Size size;
-  final UserProvider userProvider;
+  final Auth userProvider;
   final TextEditingController cpfController;
   final TextEditingController passwordController;
   final Key formKey;
@@ -52,8 +53,8 @@ class _LoginContainerState extends State<LoginContainer> {
               )
             ],
           ),
-          width: widget.size.width * 0.9,
-          height: widget.size.height * 0.4,
+          width: kIsWeb ? widget.size.width * 0.2 : widget.size.width * 0.9,
+          height: kIsWeb ? widget.size.height * 0.33 : widget.size.height * 0.4,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
