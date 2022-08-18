@@ -21,6 +21,7 @@ class HomeCards extends StatelessWidget {
         height: kIsWeb ? size.height * 0.625 : size.height * 0.5,
         width: double.infinity,
         child: ListView.builder(
+          padding: EdgeInsets.only(bottom: size.height * 0.1),
           scrollDirection: Axis.vertical,
           physics: const AlwaysScrollableScrollPhysics(),
           controller: ScrollController(),

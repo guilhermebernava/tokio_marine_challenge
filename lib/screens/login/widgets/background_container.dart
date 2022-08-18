@@ -23,7 +23,7 @@ class BackgroundContainer extends StatelessWidget {
         children: [
           Padding(
             padding: EdgeInsets.symmetric(
-              vertical: size.height * 0.1,
+              vertical: size.height * 0.05,
               horizontal: size.width * 0.075,
             ),
             child: Column(

@@ -54,7 +54,8 @@ class _LoginContainerState extends State<LoginContainer> {
             ],
           ),
           width: kIsWeb ? widget.size.width * 0.2 : widget.size.width * 0.9,
-          height: kIsWeb ? widget.size.height * 0.33 : widget.size.height * 0.4,
+          height:
+              kIsWeb ? widget.size.height * 0.33 : widget.size.height * 0.45,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [

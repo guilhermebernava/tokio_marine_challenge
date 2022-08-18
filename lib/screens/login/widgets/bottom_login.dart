@@ -11,7 +11,7 @@ class BottomLogin extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.black,
-      height: size.height * 0.6,
+      height: size.height * 0.5,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [

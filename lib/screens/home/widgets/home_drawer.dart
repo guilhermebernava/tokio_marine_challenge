@@ -141,7 +141,7 @@ class HomeDrawer extends StatelessWidget {
               ),
             ),
             Container(
-              height: size.height * 0.3,
+              height: size.height * 0.26,
               width: size.width,
               decoration: const BoxDecoration(
                 gradient: AppColors.greenGradient,
@@ -150,10 +150,10 @@ class HomeDrawer extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const Padding(
-                    padding: EdgeInsets.only(top: 20),
+                    padding: EdgeInsets.only(top: 10),
                     child: CircleAvatar(
                       backgroundColor: Colors.pink,
-                      radius: 50,
+                      radius: 40,
                     ),
                   ),
                   Padding(

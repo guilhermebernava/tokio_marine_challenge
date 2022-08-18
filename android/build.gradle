@@ -14,13 +14,7 @@ buildscript {
     }
 }
 
-defaultConfig {
-    applicationId "com.example.tokio_marine"
-    minSdkVersion 20        // MODIFY
-    targetSdkVersion 30
-    versionCode flutterVersionCode.toInteger()
-    versionName flutterVersionName
-}
+
 
 allprojects {
     repositories {
