@@ -6,6 +6,6 @@ Desafio de construir tanto versão WEB quanto ANDROID/IOS
 
 Clonar Repo
 
-Precisa ter o FLUTTER 3.0+ 
-Emulador de ANDROID ou IOS
+Precisa ter o FLUTTER 3.0+, 
+Emulador de ANDROID ou IOS, 
 Baixar depêndencias do pubspec (Flutter pub get)
